@@ -8,12 +8,11 @@ mkdocs:
 python:
   version: "3.12"  # Specify the Python version
   install:
-    - requirements: requirements.txt  # Install dependencies from requirements.txt
-    - pip: mkdocs  # Install MkDocs using pip (this should be in a dictionary)
+    - requirements: requirements.txt  # This tells Read the Docs to use requirements.txt to install dependencies
 
 # Build settings
 build:
-  os: ubuntu-22.04  # Operating system (default Ubuntu should work fine)
+  os: ubuntu-22.04  # Operating system (Ubuntu in this case)
 
   # Define the command to build your documentation
   commands:
