@@ -1,0 +1,9 @@
+site_name: Pinecone Documentation
+
+
+theme: readthedocs
+
+
+nav:
+  - Home: index.md
+  - About: about.md
