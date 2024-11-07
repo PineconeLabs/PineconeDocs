@@ -1,2 +1,2 @@
 # PineconeDocs
-Pinecone Documentation
+The Documentation for Pinecone
