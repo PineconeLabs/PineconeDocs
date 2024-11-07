@@ -6,7 +6,6 @@ mkdocs:
 
 # Python environment settings
 python:
-  version: "3.12"  # Specify the Python version
   install:
     - requirements: requirements.txt  # This tells Read the Docs to use requirements.txt to install dependencies
 
