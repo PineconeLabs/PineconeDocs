@@ -1,18 +1,9 @@
 version: 2
 
-# MkDocs configuration settings
 mkdocs:
   configuration: mkdocs.yml  # Path to your MkDocs config file
 
-# Python environment settings
-python:
-  install:
-    - requirements: requirements.txt  # This tells Read the Docs to use requirements.txt to install dependencies
-
-# Build settings
 build:
-  os: ubuntu-22.04  # Operating system (Ubuntu in this case)
-
-  # Define the command to build your documentation
+  os: ubuntu-22.04  # Use Ubuntu as the build environment
   commands:
-    - mkdocs build --clean  # This command tells Read the Docs how to build the site
+    - bash build.sh  # Run the custom build script
