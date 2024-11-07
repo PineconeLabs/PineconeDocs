@@ -5,13 +5,14 @@ mkdocs:
   configuration: mkdocs.yml  
 
 python:
+  version: "3.12"
   install:
-    - requirements: requirements.txt 
+    - requirements: requirements.txt
+    - pip install mkdocs
 
 build:
   os: ubuntu-22.04
 
 
   commands:
-    - pip install mkdocs
     - mkdocs build --clean 
