@@ -1,9 +1,0 @@
-version: 2
-
-mkdocs:
-  configuration: mkdocs.yml  # Path to your MkDocs config file
-
-build:
-  os: ubuntu-22.04  # Use Ubuntu as the build environment
-  commands:
-    - bash build.sh  # Run the custom build script
