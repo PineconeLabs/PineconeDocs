@@ -9,10 +9,7 @@ python:
     - requirements: requirements.txt  
 
 build:
-  os: ubuntu-22.04  
-  tools:
-    mkdocs:
-      version: "1.6.1"
+  os: ubuntu-22.04
 
 
   commands:
