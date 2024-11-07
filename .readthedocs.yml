@@ -6,3 +6,7 @@ mkdocs:
 python:
   install:
     - requirements: requirements.txt
+
+
+build:
+  os: ubuntu-22.04
