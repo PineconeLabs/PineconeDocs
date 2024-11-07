@@ -11,7 +11,8 @@ python:
 build:
   os: ubuntu-22.04  
   tools:
-    - mkdocs 
+    mkdocs:
+      version: "1.6.1"
 
 
   commands:
