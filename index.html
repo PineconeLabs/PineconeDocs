@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-pinecone-documentation" class="md-skip">
+        <a href="#the-pinecone-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -198,17 +198,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -218,34 +207,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -277,80 +238,16 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Pinecore
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Pinecore
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="pinecore/index.md" class="md-nav__link">
+      <a href="installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Index
+    Installation
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pinecore/matrixCreate.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    matrixCreate
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -375,23 +272,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -405,52 +285,56 @@
                   
 
 
-<h1 id="welcome-to-pinecone-documentation">Welcome to Pinecone Documentation</h1>
-<p>Welcome to the official documentation for Pinecone, a high-performance C library for building neural networks and performing machine learning. This documentation will guide you through the installation, core concepts, API usage, and examples to help you leverage the power of Pinecone in your machine learning projects.
-Overview</p>
-<p>Pinecone provides a comprehensive yet lightweight set of tools for creating and training neural networks with the speed and control of C. Designed for both newcomers and experienced developers, Pinecone includes modular components, optimization functions, and essential layers to build customized machine learning solutions.
-Why Pinecone?</p>
-<pre><code>Efficiency: Pinecone's C-based architecture ensures high performance for intensive computations.
-Flexibility: Build and customize neural networks to fit various machine learning tasks.
-Lightweight Design: Minimal dependencies make it suitable for embedded or low-resource environments.
+<h1 id="the-pinecone-documentation">The Pinecone Documentation</h1>
+<p>Welcome to the official documentation for the Pinecone library! Pinecone is a C library designed for Machine Learning and Neural Networks. This guide will help you get started, understand the modules available, and dive into the API details.
+Table of Contents</p>
+<p><a href="#introduction">Introduction</a><br>
+<a href="#installing-pinecone">Installation</a><br>
+<a href="#quick-start">Quick Start</a><br>
+<a href="#modules-overview">Modules Overview</a><br>
+<a href="#api-reference">API Reference</a><br>
+<a href="#examples">Examples</a><br>
+<a href="#contributing">Contributing</a><br>
+<a href="#license">License</a><br></p>
+<h1 id="introduction">Introduction</h1>
+<p>Pinecone is designed to make [add any specific functionality] easier in C. This library provides optimized tools for [list any key features, like "matrix manipulation, neural networks, and data preprocessing"].
+Installation</p>
+<h1 id="installing-pinecone">Installing Pinecone</h1>
+<p>See <a href="installation/">INSTALLATION</a></p>
+<h1 id="quick-start">Quick Start</h1>
+<p>Here's a quick example to get started with Pinecone:</p>
+<pre><code class="language-c">#include &quot;pinecone.h&quot;
+#include &lt;stdio.h&gt;
+
+int main() {
+    int number_imgs = 3000;
+    Img** imgs = csvToImg(&quot;data/mnist_test.csv&quot;, number_imgs);
+    NeuralNetwork* net = nnLoad(&quot;testing_net&quot;);
+    double score = nnPredictImgs(net, imgs, 1000);
+    printf(&quot;Score: %1.5f\n&quot;, score);
+}
 </code></pre>
-<h2 id="documentation-contents">Documentation Contents</h2>
-<p>Use the navigation sidebar to explore each section, or get started with the links below:
-1. Getting Started</p>
-<pre><code>Installation Guide: Instructions to install and set up Pinecone.
-Quick Start Tutorial: A hands-on tutorial to build your first neural network using Pinecone.
+<h1 id="modules-overview">Modules Overview</h1>
+<p>Pinecone is organized into several modules to streamline different functionalities:</p>
+<pre><code>Matrix Operations: Functions for creating, manipulating, and performing operations on matrices.
+Neural Networks: Utilities to build and run basic neural networks.
+Image Processing: Functions for image transformations and preprocessing.
 </code></pre>
-<ol>
-<li>
-<p>Core Concepts</p>
-<p>Neural Network Basics: Overview of neural networks and how they are represented in Pinecone.
-Layers and Activation Functions: Explanation of available layers (Dense, Convolutional, etc.) and activation functions (ReLU, Sigmoid, etc.).
-Loss and Optimization: Guide to loss functions and optimizers provided in Pinecone, including cross-entropy, mean squared error, SGD, and Adam.</p>
-</li>
-<li>
-<p>API Reference</p>
-<p>Network Module: Detailed API documentation for the PCNetwork structure, the core of Pinecone’s neural network functionalities.
-Layers Module: Documentation for creating and managing layers within a neural network.
-Training Functions: Reference for training-related functions, such as compiling and fitting models.
-Utilities: Other utility functions provided by Pinecone to assist in pre- and post-processing.</p>
-</li>
-<li>
-<p>Examples</p>
-<p>Classification Example: A step-by-step example of training a neural network for a classification task.
-Regression Example: Example of using Pinecone for a regression task, demonstrating how to adjust layers and loss functions.
-Custom Layers and Activations: How to define custom layers and activation functions.</p>
-</li>
-<li>
-<p>Advanced Topics</p>
-<p>Optimizing for Performance: Tips and best practices for optimizing Pinecone models for speed and memory usage.
-Memory Management: Guide to effectively managing memory when using Pinecone in resource-constrained environments.
-Extending Pinecone: Information on how to extend Pinecone with custom layers, loss functions, and optimizers.</p>
-</li>
-</ol>
-<p>Support and Contributing</p>
-<p>Check out the Support and Contributing section if you're interested in contributing to Pinecone or need help troubleshooting issues.
+<p>Refer to the API Reference section for in-depth details on each module.</p>
+<h1 id="api-reference">API Reference</h1>
+<p>The following sections cover each function provided by Pinecone, organized by module:</p>
+<pre><code>Matrix Functions: Functions to initialize, transpose, and perform mathematical operations on matrices.
+Neural Network Functions: Neural network creation, activation functions, and training utilities.
+Image Processing Functions: Image manipulation and data handling tools.
+</code></pre>
+<h1 id="examples">Examples</h1>
+<p>See the examples/ directory for sample programs that demonstrate how to use the Pinecone library in practical applications.
+Contributing</p>
+<h1 id="contributing">Contributing</h1>
+<p>We welcome contributions to Pinecone! Please see CONTRIBUTING.md for guidelines on reporting issues, submitting code, and joining discussions.
 License</p>
-<p>Pinecone is open-source software, licensed under the MIT License. For more details, see the License page.</p>
+<h1 id="license">License</h1>
+<p>Pinecone is distributed under the GPL 3.0 License. See <a href="https://github.com/PineconeLabs/Pinecone/tree/main/LICENSE">LICENSE</a> for more details.</p>
 
 
 

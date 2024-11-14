@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../about/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Index - Pinecone Documentation</title>
+        <title>Installation - Pinecone Documentation</title>
       
     
     
@@ -57,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-pinecone" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Installation
             
           </span>
         </div>
@@ -219,81 +226,27 @@
       
   
   
+    
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Pinecore
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Pinecore
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pinecore/index.md" class="md-nav__link">
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Index
+    Installation
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pinecore/matrixCreate.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    matrixCreate
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -316,6 +269,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -330,9 +285,25 @@
                   
 
 
-  <h1>Index</h1>
-
-
+<h1 id="install-pinecone">Install Pinecone</h1>
+<p>To use Pinecone in your C program, follow these steps:</p>
+<p>Download the Repository
+Clone or download the Pinecone repository from GitHub.</p>
+<pre><code class="language-bash">git clone https://github.com/PineconeLabs/Pinecone.git
+cd Pinecone
+</code></pre>
+<p>Build the Library
+Run make in the root directory of the repository to build Pinecone.</p>
+<pre><code class="language-bash">make
+</code></pre>
+<p>Include Header File
+Copy the build/pinecone.h file to your project’s include directory:</p>
+<pre><code class="language-bash">cp build/pinecone.h /path/to/your/project/include/
+</code></pre>
+<p>Link Against Pinecone
+Link your project against libpinecone.a by adding it to your linker flags:</p>
+<pre><code class="language-bash">gcc your_program.c path/to/libpinecone.a -o your_program
+</code></pre>
 
 
 
